@@ -23,7 +23,7 @@ public class CustomDetailsService implements UserDetailsService {
 			UserDTO userDTO = new UserDTO();
 			userDTO.setUsername("raviprasasd");
 			userDTO.setPassword("$2a$08$fL7u5xcvsZl78su29x1ti.dxI.9rYO8t0q5wk2ROJ.1cdR53bmaVG"); //"password"
-			GrantedAuthority authority = new SimpleGrantedAuthority("ROLE.SYSTEMADMIN");
+			GrantedAuthority authority = new SimpleGrantedAuthority("ROLE_SYSTEMADMIN");
 			authorities.add(authority);
 			userDTO.setGrantedAuthorities(authorities);
 			CustomUser customUser = new CustomUser(userDTO);
